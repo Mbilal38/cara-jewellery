@@ -3,7 +3,7 @@
 This project is a high-end, responsive e-commerce frontend built as a technical assessment. It focuses on a clean, luxury aesthetic, reusable component architecture, and modular code practices.
 
 ##  Live Demo
-[Insert your Vercel deployment link here]
+[https://cara-jewellery.vercel.app]
 
 ## 🛠 Tech Stack
 * **Framework:** React (Vite)
@@ -106,12 +106,3 @@ The assignment evaluator will be looking for specific professional standards. Ba
 *   **✅ Clean Code:** You have removed dead code and properly named your functions and classes (e.g., `catagory-content`, `footer-brand`). 
 *   **✅ Accessibility:** You included alt tags on images and proper semantic tags (`<section>`, `<h3>`, `<ul>`). This is a huge plus for reviewers.
 
-### Final Deployment Step
-Since you have pushed to GitHub:
-1.  Go to [Vercel](https://vercel.com/dashboard).
-2.  Click **Add New...** -> **Project**.
-3.  Import your `cara-jewellery` repository.
-4.  **Important:** Since your code is inside a `react-practice` folder, make sure the **Root Directory** setting in Vercel is set to `react-practice`.
-5.  Click **Deploy**.
-
-**You are ready to submit!** Good luck with the assessment—the UI you’ve built is professional and clean.
