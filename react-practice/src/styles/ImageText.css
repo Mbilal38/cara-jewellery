@@ -1,0 +1,131 @@
+.ImageText {
+  padding: 112px 0;
+  background-color: #f4efe7;
+  border-bottom: #8a7e6e 1px solid;
+}
+.main-section {
+  margin: 0 20px;
+  padding: 0 64px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 96px;
+}
+.SectionImage {
+  width: 588px;
+  height: 735px;
+  object-fit: cover;
+}
+.SectionContent {
+  width: 588px;
+  max-height: 735px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  row-gap: 24px;
+}
+
+.SectionContent h4 {
+  text-transform: uppercase;
+  color: #c9a66b;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+}
+.SectionContent h1 {
+  font-size: 43px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  color: #1c2b26;
+  font-weight: 500;
+}
+.divider {
+  width: 64px;
+  height: 1px;
+  background-color: #c9a66b;
+}
+
+.SectionContent p {
+  color: #8a7e6e;
+  font-size: 16px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  max-width: 448px;
+}
+.maison-btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #1c2b26;
+  line-height: 1.5;
+  border: 1px solid #1c2b26;
+  background-color: transparent;
+  padding: 14px 28px;
+  align-self: flex-start;
+}
+.maison-btn:hover {
+  color: #f4efe7;
+  background-color: #1c2b26;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .ImageText {
+    padding: 88px 0;
+  }
+  .SectionImage {
+    width: 400px;
+    height: 500px;
+  }
+}
+@media (max-width: 850px) {
+  .ImageText {
+    padding: 60px 0;
+  }
+  .SectionImage {
+    width: 320px;
+    height: 400px;
+  }
+  .SectionContent h1 {
+    font-size: 32px;
+  }
+  .SectionContent p {
+    font-size: 13px;
+  }
+  .maison-btn {
+    font-size: 10px;
+    padding: 10px 22px;
+  }
+}
+@media (max-width: 768px) {
+  .ImageText {
+    padding: 20px 0;
+  }
+  .main-section {
+    margin: 0 5px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .SectionContent {
+    width: 320px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 24px;
+  }
+  .mainImage {
+    display: flex;
+    justify-content: center;
+  }
+  .SectionImage {
+    width: 354px;
+    height: 270px;
+  }
+  
+}

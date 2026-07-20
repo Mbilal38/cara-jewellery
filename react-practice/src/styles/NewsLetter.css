@@ -1,0 +1,79 @@
+.newsLetter-section {
+  background-color: #edf3f0;
+  padding: 112px 0;
+}
+.newsLetter-content {
+  margin: 0 20px;
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter-text h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #c9a66b;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.newsletter-text h1 {
+  font-size: 48px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-weight: 100;
+  color: #1c2b2c;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.newsletter-input {
+  margin-top: 36px;
+
+  display: flex;
+  gap: 100px;
+  border-bottom: 1px solid #8a7e6e;
+}
+.newsletter-input input {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  color: #8a7e6e;
+  outline: none;
+}
+.placeholder {
+  color: #8a7e6e;
+}
+.newsletter-btn {
+  color: #0e5c46;
+  border: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.newsletter-btn:hover {
+  color: #c9a66b;
+}
+@media (max-width: 766px) {
+  .newsLetter-section {
+    padding: 56px 0;
+  }
+  .newsletter-text h1 {
+    font-size: 27px;
+    letter-spacing: 0;
+  }
+  .newsletter-input {
+    gap: 60px;
+  }
+}

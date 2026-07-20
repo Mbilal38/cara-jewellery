@@ -1,0 +1,240 @@
+.bestSeller-section {
+  padding: 128px 0;
+  background-color: #f4efe7;
+}
+.bestSeller-container {
+  margin: 0 20px;
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+}
+.bestSeller-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 16px;
+}
+.bestSeller-heading h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #c9a66b;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.bestSeller-heading h1 {
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-size: 48px;
+  color: #090909;
+  font-weight: 100;
+  white-space: nowrap;
+}
+.bestSeller-heading p {
+  color: #8a7e6e;
+  font-size: 16px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+
+.bestSeller-grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.bestSeller-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestSeller-image-wrapper {
+  position: relative;
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+}
+.bestSeller-badge {
+  text-transform: uppercase;
+  font-size: 10px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #1c2b26;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 4px 10px;
+  background-color: #f4efe7;
+  z-index: 10;
+}
+.bestSeller-image {
+  width: 294px;
+  height: 294px;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+.bestSeller-image:hover {
+  transform: scale(1.05);
+}
+.bestSeller-card-info {
+  margin-top: 20px;
+}
+.bestSeller-card-info h3 {
+  font-size: 18px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-weight: 200;
+  color: #1c2b26;
+}
+.bestSeller-card-info p {
+  margin-top: 4px;
+  color: #8a7e6e;
+  font-size: 14px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+.add-btn {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #1c2b26;
+  background-color: #fbf9f4;
+  border: none;
+  z-index: 5;
+}
+
+.bestSeller-card:hover .add-btn {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.add-btn:hover {
+  background-color: #0e5c46;
+  color: #fbf9f4;
+}
+.bestSeller-btn {
+  margin-top: 56px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #1c2b26;
+  line-height: 1.5;
+  border: 1px solid #1c2b26;
+  background-color: transparent;
+  padding: 14px 28px;
+  align-self: center;
+}
+.bestSeller-btn:hover {
+  color: #f4efe7;
+  background-color: #1c2b26;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 1380px) {
+  .bestSeller-container {
+    margin: 0;
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .bestSeller-section {
+    padding: 88px 0;
+  }
+  .bestSeller-container {
+    margin: 0;
+  }
+  .bestSeller-image-wrapper {
+    width: 190px;
+    height: 190px;
+  }
+  .bestSeller-image {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media (max-width: 1000px) {
+  .bestSeller-section {
+    padding: 58px 0;
+  }
+  .bestSeller-grid {
+    margin-top: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bestSeller-card {
+    align-items: center;
+  }
+  .bestSeller-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .bestSeller-image {
+    width: 250px;
+    height: 250px;
+  }
+  .add-btn {
+    display: flex;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .bestSeller-section {
+    padding: 32px 0;
+  }
+  .bestSeller-container {
+    padding: 0 10px;
+  }
+  .bestSeller-heading h1 {
+    font-size: 32px;
+  }
+  .bestSeller-heading p {
+    font-size: 12px;
+  }
+  .bestSeller-grid {
+    margin-top: 32px;
+    row-gap: 30px;
+  }
+  .bestSeller-image-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+  .bestSeller-image {
+    width: 160px;
+    height: 160px;
+  }
+  .bestSeller-card-info h3 {
+    font-size: 14px;
+  }
+  .bestSeller-card-info p {
+    font-size: 10px;
+  }
+  .bestSeller-card-info {
+    margin-top: 10px;
+  }
+  .bestSeller-btn {
+    margin-top: 46px;
+    font-size: 11px;
+    padding: 10px 20px;
+  }
+  .bestSeller-badge {
+    font-size: 7px;
+    font-weight: 500;
+    padding: 2px 6px;
+  }
+}

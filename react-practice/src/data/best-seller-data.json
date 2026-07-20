@@ -1,0 +1,22 @@
+[
+  {
+    "image": "/assets/bestSellerImage1.webp",
+    "name": "Emerald Solitaire Ring",
+    "price": "AED 48,500"
+  },
+  {
+    "image": "/assets/bestSellerImage2.webp",
+    "name": "Pavé Diamond Necklace",
+    "price": "AED 32,900"
+  },
+  {
+    "image": "/assets/bestSellerImage3.webp",
+    "name": "Sapphire Halo Ring",
+    "price": "AED 27,800"
+  },
+  {
+    "image": "/assets/bestSellerImage4.webp",
+    "name": "Eternity Diamond Band",
+    "price": "AED 18,600"
+  }
+]

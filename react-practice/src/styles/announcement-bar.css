@@ -1,0 +1,18 @@
+.announcement-bar {
+    background-color: #0e5c46;
+    color: #f4efe7;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2.4px;
+    min-height: 36px;
+}
+@media (max-width: 768px){
+    .announcement-bar{
+        font-size: 10px;
+    }
+}

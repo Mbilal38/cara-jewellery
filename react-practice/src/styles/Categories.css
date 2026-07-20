@@ -1,0 +1,95 @@
+.categories-section {
+  padding: 128px 0;
+  background-color: #f4efe7;
+}
+.categories-container {
+  margin: 0 20px;
+  padding: 0 64px;
+  display: flex;
+  justify-content: center;
+}
+.category-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.category-card {
+  position: relative;
+  width: 238px;
+  height: 317px;
+  overflow: hidden;
+}
+.category-image {
+  width: 238px;
+  height: 317px;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+.category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 2;
+  transition: background 0.4s ease;
+}
+.category-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.category-text h4 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin: 0;
+  pointer-events: none;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.05);
+}
+
+.category-card:hover .category-text {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1200px) {
+  .categories-container {
+    margin: 0;
+  }
+  .category-card {
+    width: 160px;
+    height: 217px;
+  }
+  .category-image {
+    width: 160px;
+    height: 217px;
+  }
+}
+@media (max-width: 800px) {
+  .categories-section {
+    padding: 64px 0;
+  }
+  .categories-container {
+    padding: 0 20px;
+  }
+  .category-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-text h4 {
+    font-size: 20px;
+  }
+}

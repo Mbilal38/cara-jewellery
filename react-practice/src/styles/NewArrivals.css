@@ -1,0 +1,212 @@
+.newArrivals-section {
+  padding: 128px 0;
+  background-color: #fbf9f4;
+}
+.newArrivals-container {
+  margin: 0 20px;
+  padding: 0 64px;
+}
+.newArrivals-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 16px;
+}
+.newArrivals-heading h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #c9a66b;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.newArrivals-heading h1 {
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-size: 48px;
+  color: #090909;
+  font-weight: 100;
+  white-space: nowrap;
+}
+.newArrivals-grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.newArrivals-card {
+  display: flex;
+  flex-direction: column;
+  
+}
+.newArrivals-image-wrapper {
+  position: relative;
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+}
+.newArrivals-badge {
+  text-transform: uppercase;
+  font-size: 10px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #1c2b26;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 4px 10px;
+  background-color: #f4efe7;
+  z-index: 10;
+}
+.newArrivals-card:nth-child(4n + 3) .newArrivals-badge,
+.newArrivals-card:nth-child(4n + 4) .newArrivals-badge {
+  display: none;
+}
+.newArrivals-image {
+  width: 294px;
+  height: 294px;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+.newArrivals-image:hover {
+  transform: scale(1.05);
+}
+.add-btn-newArrivals {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 39px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  color: #1c2b26;
+  background-color: #f4efe7;
+  border: none;
+  z-index: 5;
+}
+
+.newArrivals-card:hover .add-btn-newArrivals {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+.add-btn-newArrivals:hover {
+  background-color: #0e5c46;
+  color: #fbf9f4;
+}
+
+.newArrivals-card-info {
+  margin-top: 20px;
+}
+.newArrivals-card-info h3 {
+  font-size: 18px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-weight: 200;
+  color: #1c2b26;
+}
+.newArrivals-card-info p {
+  margin-top: 4px;
+  color: #8a7e6e;
+  font-size: 14px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+@media (max-width: 1380px) {
+  .newArrivals-container {
+    margin: 0;
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .newArrival-container {
+    margin: 0;
+  }
+  .newArrivals-image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .newArrivals-image {
+    width: 200px;
+    height: 200px;
+  }
+  .add-btn {
+    display: flex;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .newArrivals-section {
+    padding: 58px 0;
+  }
+  .newArrivals-grid {
+    margin-top: 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newArrivals-card {
+    align-items: center;
+  }
+  .newArrivals-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .newArrivals-image {
+    width: 250px;
+    height: 250px;
+  }
+  .add-btn-newArrivals {
+    display: flex;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 680px) {
+  .newArrivals-section {
+    padding: 32px 0;
+  }
+  .newArrivals-container {
+    padding: 0 10px;
+  }
+  .newArrivals-heading h1 {
+    font-size: 32px;
+  }
+  .newArrivals-heading p {
+    font-size: 12px;
+  }
+  .newArrivals-grid {
+    margin-top: 32px;
+    row-gap: 30px;
+
+  }
+  .newArrivals-image-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+  .newArrivals-image {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .newArrivals-card-info h3 {
+    font-size: 14px;
+  }
+  .newArrivals-card-info p {
+    font-size: 10px;
+  }
+  .newArrivals-card-info {
+    margin-top: 10px;
+  }
+
+}

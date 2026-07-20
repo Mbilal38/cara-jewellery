@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/assets/carousel-image1.webp",
+    "name": "Emerald Light",
+    "detail": "High jewelry, reimagined"
+  },
+  {
+    "image": "/assets/carousel-image2.webp",
+    "name": "The Cara Setting",
+    "detail": "A signature worth keeping"
+  },
+  {
+    "image": "/assets/carousel-image3.webp",
+    "name": "Eternal Gold",
+    "detail": "Craft in 18k and 22k"
+  },
+  {
+    "image": "/assets/carousel-image4.webp",
+    "name": "Certified Brilliance",
+    "detail": "GIA · IGI · HRD"
+  },
+  {
+    "image": "/assets/carousel-image5.webp",
+    "name": "Bridal Atelier",
+    "detail": "For the day, and every day after"
+  }
+]

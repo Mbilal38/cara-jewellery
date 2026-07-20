@@ -1,0 +1,149 @@
+.product-carousel {
+  padding: 128px 0;
+}
+.product-carousel-content {
+  margin: 0 20px;
+  padding: 0 64px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 24px;
+}
+.heading h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0.3em;
+  color: #c9a66b;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.heading h1 {
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-size: 48px;
+  color: #090909;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.carousel {
+  margin: 64px 0 0 0;
+  display: flex;
+  overflow-x: auto;
+  gap: 32px;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.carouselCard {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+}
+.carousel-image-wrapper {
+  display: grid;
+  width: 380px;
+  max-height: 508px;
+  overflow: hidden;
+}
+.carousel-image {
+  width: 380px;
+  height: 508px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+.carousel-image:hover {
+  transform: scale(1.05);
+}
+.card-info {
+  margin-top: 24px;
+}
+.card-info h3 {
+  font-size: 24px;
+  font-family:
+    "Cormorant Garamond", "Cormorant Garamond Fallback", ui-serif, Georgia,
+    serif;
+  font-weight: 200;
+  color: #1c2b26;
+}
+.card-info p {
+  margin-top: 4px;
+  color: #8a7e6e;
+  font-size: 14px;
+  font-family: "Jost", "Jost Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+@media (max-width: 1024px) {
+  .product-carousel {
+    padding: 80px 0;
+  }
+  .product-carousel-content {
+    margin: 0 10px;
+    padding: 0 34px;
+  }
+  .carouselCard {
+    flex: 0 0 200px;
+  }
+  .carousel-image-wrapper {
+    width: 268px;
+  }
+  .carousel-image {
+    width: 268px;
+    height: 358px;
+  }
+  .card-info {
+    margin-top: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .product-carousel {
+    padding: 20px 0;
+  }
+  .product-carousel-content {
+    margin: 0 5px;
+    padding: 0 10px;
+  }
+  .heading {
+    row-gap: 10px;
+  }
+  .heading h1 {
+    font-size: 32px;
+  }
+  .carousel {
+    margin: 20px 0 0 0;
+    gap: 18px;
+  }
+
+  .carouselCard {
+    flex: 0 0 120px;
+  }
+  .carousel-image-wrapper {
+    width: 248px;
+    
+  }
+  .carousel-image {
+    width: 248px;
+    height: 338px;
+  }
+  .card-info {
+    margin-top: 10px;
+  }
+  .card-info h3 {
+    font-size: 18px;
+  }
+  .card-info p {
+    font-size: 12px;
+  }
+}
